@@ -1,0 +1,187 @@
+/* f070 */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+body {
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vmin;
+    height: 100vmin;
+    border-radius: 50%;
+    /* background-color: rgb(11, 93, 70); */
+    box-shadow: 0 0 37px 400px inset rgba(11, 93, 70, .5), 0 0 270px 163px rgba(11, 93, 70, .5);
+}
+.form {
+    position: relative;
+    width: 400px;
+    overflow: hidden;
+    border: 1px solid #414141;
+    border-radius: 10px;
+}
+.form::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-image: linear-gradient(transparent 11%, rgb(71, 207, 166) 46%, transparent 85%);
+    z-index: 3;
+}
+.form::after {
+    content: "";
+    position: absolute;
+    right: 1px;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-image: linear-gradient(transparent 11%, rgb(71, 207, 166) 46%, transparent 85%);
+}
+.form .log-in {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    box-shadow: 0 0 200px 20px #06211a inset,0 0 200px 20px #083c2d inset,0 0 401px 20px #156a86 inset;
+}
+.form .log-in::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-image: linear-gradient(to left,transparent 18%,#47cfa6 52%,transparent 78%);
+}
+.form .log-in::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-image: linear-gradient(to left,transparent 12%,#47cfa6 56%,transparent 85%);
+}
+.form .log-in .image-box {
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto 40px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 8px solid white;
+}
+.form .log-in .image-box i {
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 110px;
+}
+.form .log-in .input-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 2px solid white;
+}
+.form .log-in .input-box legend {
+    text-align: left;
+    padding: 0 5px;
+}
+.form .log-in .input-box .input {
+    display: flex;
+    align-items: center;
+    margin-top: -7px;
+    width: 100%;
+}
+.form .log-in .input-box .input input {
+    width: 93%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+.form .log-in .input-box .input {
+    position: relative;
+    margin-left: 5px;
+}
+.form .log-in .input-box .input::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    right: 0;
+}
+.form .log-in .input-box .input .click {
+    padding: 8px;
+    z-index: 5;
+    margin-left: 5px;
+}
+.form .log-in .input-box.name .input .click.auto {
+    cursor: auto;
+}
+.form .log-in .input-box.name .input.delete::before {
+    content: "\f00d";
+    font-size: 21px;
+}
+.form .log-in .input-box.password .input::before {
+    content: "\f070";
+    font-size: 14px;
+}
+.form .log-in .input-box.password .input.no-see::before {
+    content: "\f06e";
+}
+.form .log-in .check {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form .log-in .check .check-remember {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.form .log-in .check .check-remember .check-box {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    margin-right: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.form .log-in .check .check-remember .check-box.checked::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00c";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 11px;
+}
+.form .log-in button {
+    margin-top: 80px;
+    width: 100%;
+    padding: 15px;
+    background-color: #57ba43;
+    border-radius: 40px;
+    cursor: pointer;
+}
