@@ -132,6 +132,7 @@ body {
     padding: 8px;
     z-index: 5;
     margin-left: 5px;
+    cursor: pointer;
 }
 .form .log-in .input-box.name .input .click.auto {
     cursor: auto;

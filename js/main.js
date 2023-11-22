@@ -3,6 +3,7 @@ document.onkeydown = function() {
     if(rm.value != "" || rm.value != null) {
         document.querySelector(".form .log-in .input-box.name .input").classList.add("delete");
     }
+    document.querySelector(".form .log-in .input-box.name .input .click").classList.remove("auto");
 }
 document.querySelector(".form .log-in .input-box.password .input .click").onclick = function() {
     document.querySelector(".form .log-in .input-box.password .input").classList.toggle("no-see");
@@ -23,6 +24,7 @@ function dele() {
     requestAnimationFrame(dele);
     if(rm.value == "") {
         document.querySelector(".form .log-in .input-box.name .input").classList.remove("delete");
+        document.querySelector(".form .log-in .input-box.name .input .click").classList.add("auto");
     }
 } 
 dele();
